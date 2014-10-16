@@ -13,7 +13,7 @@ notifications:
   email:
     - vidya@shippable.com
     
-cache: true
+#cache: true
 after_script:
   - cp README.md ./shippable
 matrix:
