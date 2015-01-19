@@ -8,6 +8,10 @@ env:
 
 build_image: shippable/minv2
 
+
+before_install:
+  #- source /home/shippable/.rvm/scripts/rvm
+  - source ~/.rvm/scripts/rvm && rvm use 1.9.3
 services:
   - rabbitmq
   
