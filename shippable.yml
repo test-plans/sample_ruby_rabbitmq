@@ -15,7 +15,7 @@ before_install:
   - rvm use 2.0.0
 services:
   - rabbitmq
-  
+
 notifications:
   email:
     - vidya@shippable.com
@@ -23,6 +23,7 @@ notifications:
 #cache: true
 after_script:
   - cp README.md ./shippable
+
 
 matrix:
   include:
