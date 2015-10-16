@@ -6,7 +6,6 @@ rvm:
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
-
 #build_image: shippable/minv2:beta
 archive: true
 
@@ -25,7 +24,6 @@ notifications:
 #cache: true
 after_script:
   - cp README.md ./shippable
-
 
 #matrix:
  # include:
