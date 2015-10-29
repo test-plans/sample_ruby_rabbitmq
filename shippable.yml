@@ -23,7 +23,6 @@ notifications:
 after_script:
   - cp README.md ./shippable
 
-
 matrix:
   include:
     - rvm: 2.2.0
