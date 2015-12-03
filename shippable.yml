@@ -15,9 +15,9 @@ before_install:
 services:
   - rabbitmq
 
-#notifications:
- # email:
-  # - vidya@shippable.com
+notifications:
+  email:
+   - vidya@shippable.com
 
     
 #cache: true
