@@ -17,9 +17,11 @@ services:
 
 notifications:
   email:
-   - vidya@shippable.com
-
-    
+     recipients:
+        - vidya@shippable.com
+       # - exampletwo@org.com
+     on_success: always
+     on_failure: change    
 #cache: true
 after_script:
   - cp README.md ./shippable
