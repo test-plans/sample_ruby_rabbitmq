@@ -16,12 +16,8 @@ services:
   - rabbitmq
 
 notifications:
-  email:
-     recipients:
-        - vidya@shippable.com
-       # - exampletwo@org.com
-     on_success: always
-     on_failure: change    
+  email: false
+      
 #cache: true
 after_script:
   - cp README.md ./shippable
