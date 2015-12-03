@@ -17,10 +17,6 @@ before_install:
 services:
   - rabbitmq
 
-notifications:
-  email:
-   - vidya@shippable.com
-
 #cache: true
 after_script:
   - cp README.md ./shippable
