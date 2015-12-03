@@ -20,8 +20,8 @@ notifications:
      recipients:
         - vidya@shippable.com
        # - exampletwo@org.com
-     on_success: always
-     on_failure: change    
+     on_success: change
+     on_failure: always  
 #cache: true
 after_script:
   - cp README.md ./shippable
