@@ -24,7 +24,13 @@ notifications:
         - vidya@shippable.com
         - exampletwo@org.com
      on_success: always
-     on_failure: change    
+     on_failure: change   
+  irc:
+   #pull_requests: true
+   channels:
+     #- "chat.freenode.net#test-irc"
+     - "chat.freenode.net#testing2"
+
 #cache: true
 after_script:
   - cp README.md ./shippable
