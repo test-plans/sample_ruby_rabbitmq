@@ -12,6 +12,9 @@ before_install:
   #- source /home/shippable/.rvm/scripts/rvm
   #- source ~/.rvm/scripts/rvm && rvm use 1.9.3
   - rvm use 2.0.0
+  
+archive: true
+
 services:
   - rabbitmq
 
@@ -19,7 +22,7 @@ notifications:
   email:
      recipients:
         - vidya@shippable.com
-       # - exampletwo@org.com
+        - exampletwo@org.com
      on_success: always
      on_failure: change    
 #cache: true
