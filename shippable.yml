@@ -25,3 +25,4 @@ after_script:
 matrix:
   include:
     - rvm: 2.2.0
+      env: CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
